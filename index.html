@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALS Hope Fund — No Cure. No Mercy.</title>
+  <meta name="description" content="A movement to end ALS. 100% of every donation funds research and patient care. We 
+accept Bitcoin and Solana." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">ALS <em>Hope Fund</em></div>
+    <ul class="nav-links">
+      <li><button onclick="scrollToSection('about')">About ALS</button></li>
+      <li><button onclick="scrollToSection('leaderboard')">Donors</button></li>
+      <li><button onclick="scrollToSection('donate')">Donate</button></li>
+    </ul>
+    <button class="nav-cta" onclick="scrollToSection('donate')">Donate Now</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <h1>No Cure.<br><em>No Mercy.</em></h1>
+      <p class="hero-lead">
+        ALS strips away movement, voice, and breath — one nerve at a time.
+        The mind stays fully aware of everything it loses. There is no treatment.
+        There is no cure. But there is us.
+      </p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="scrollToSection('donate')">Donate Now</button>
+        <button class="btn-ghost" onclick="scrollToSection('leaderboard')">See Donors <span>→</span></button>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num" id="stat-donors">542</div>
+          <div class="hero-stat-label">donors worldwide</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">~30k</div>
+          <div class="hero-stat-label">Americans with ALS today</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">0</div>
+          <div class="hero-stat-label">approved cures</div>
+        </div>
+      </div>
+      <div>
+        <div class="hero-progress-label">
+          <span class="hero-raised" id="stat-raised">$623,940.00</span>
+          <span class="hero-goal">goal: $1,000,000</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-fill" style="width:62.4%"></div>
+        </div>
+        <p class="progress-pct" id="progress-pct">62.4% of goal reached</p>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-right-watermark">ALS ALS ALS</div>
+      <div class="hero-right-inner">
+        <div class="hero-card">
+          <h3>The disease that takes everything</h3>
+          <p>Amyotrophic lateral sclerosis destroys the nerve cells that control voluntary movement. Patients slowly lose 
+the ability to walk, speak, swallow, and breathe — while remaining fully conscious throughout.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-stat">Every 90 min</div>
+          <div class="fact-desc">someone is diagnosed — and someone dies</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-stat">No cure</div>
+          <div class="fact-desc">not a single treatment halts progression</div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-stat">2–5 years</div>
+          <div class="fact-desc">average survival after diagnosis</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-left">
+        <p class="section-eyebrow">About the Disease</p>
+        <h2 class="section-title">The Reality of <em>ALS</em></h2>
+        <p class="about-body">Amyotrophic lateral sclerosis — also called Lou Gehrig's disease — is a progressive 
+neurodegenerative disease that attacks the nerve cells responsible for controlling voluntary muscles in the brain and 
+spinal cord.</p>
+        <p class="about-body">The cruelest part is not the physical loss — it's that the mind remains entirely sharp 
+through all of it. Patients watch themselves disappear while fully awake. There is no treatment that stops it. There is no 
+cure.</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card">
+          <p class="about-card-num">01</p>
+          <h4>It takes everything</h4>
+          <p>ALS destroys the nerves controlling voluntary movement. Walking, speaking, swallowing, breathing — each 
+ability goes, one by one, while the mind remains completely intact.</p>
+        </div>
+        <div class="about-card">
+          <p class="about-card-num">02</p>
+          <h4>No warning. No pattern.</h4>
+          <p>90% of ALS cases have no family history. It strikes athletes, executives, parents, and children without 
+warning. Anyone can receive the diagnosis tomorrow.</p>
+        </div>
+        <div class="about-card">
+          <p class="about-card-num">03</p>
+          <h4>90 minutes</h4>
+          <p>Every 90 minutes, someone in America is diagnosed with ALS. Every 90 minutes, someone dies from it. The cycle 
+has continued for over a century.</p>
+        </div>
+        <div class="about-card">
+          <p class="about-card-num">04</p>
+          <h4>Still no cure — but close</h4>
+          <p>Decades of research have produced treatments that slow progression slightly. But nothing stops it. Every 
+dollar raised funds the researchers who believe they can change that.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT BAR -->
+  <div class="impact-bar">
+    <div>
+      <div class="impact-num">~30<span>k</span></div>
+      <div class="impact-label">Americans living with ALS</div>
+    </div>
+    <div>
+      <div class="impact-num">2–5<span> yr</span></div>
+      <div class="impact-label">average survival post-diagnosis</div>
+    </div>
+    <div>
+      <div class="impact-num">90<span>%</span></div>
+      <div class="impact-label">cases with no family history</div>
+    </div>
+    <div>
+      <div class="impact-num">55<span> yr</span></div>
+      <div class="impact-label">Stephen Hawking lived with ALS</div>
+    </div>
+  </div>
+
+  <!-- LEADERBOARD -->
+  <section id="leaderboard">
+    <div class="lb-header">
+      <div>
+        <p class="section-eyebrow">Donors</p>
+        <h2 class="section-title" style="margin-bottom:0">Wall of Hope</h2>
+      </div>
+      <p class="lb-count" id="lb-count">542 supporters and counting</p>
+    </div>
+    <div class="top-donors">
+      <h3 class="lb-section-title">Top Donors</h3>
+      <div id="top-donors-list"></div>
+    </div>
+    <div id="all-supporters-section">
+      <h3 class="lb-section-title">All Supporters</h3>
+      <div class="supporters-grid" id="supporters-grid"></div>
+      <button class="load-more-btn hidden" id="load-more-btn" onclick="loadMore()">Load More</button>
+    </div>
+  </section>
+
+  <!-- DONATE -->
+  <section id="donate">
+    <div class="donate-inner">
+      <p class="section-eyebrow">Make a Donation</p>
+      <h2 class="section-title">Make an <em>Impact</em></h2>
+      <p class="donate-lead">100% of every donation funds ALS research and patient care. We accept Bitcoin and Solana — no 
+credit cards.</p>
+      <div class="donate-box">
+        <!-- STEP 1 -->
+        <div id="step-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="firstName">First Name</label>
+              <input class="form-input" id="firstName" type="text" placeholder="John" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lastName">Last Name</label>
+              <input class="form-input" id="lastName" type="text" placeholder="Doe" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email <span class="form-label-note">(Optional — for 
+receipt)</span></label>
+            <input class="form-input" id="email" type="email" placeholder="john@example.com" />
+            <p class="form-error hidden" id="email-error">Please enter a valid email.</p>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="amount">Donation Amount (USD equivalent)</label>
+            <div class="amount-wrap">
+              <span class="amount-prefix">$</span>
+              <input class="form-input form-input-amount" id="amount" type="number" min="1" step="1" value="100" />
+            </div>
+            <p class="form-error hidden" id="amount-error">Amount must be at least $1.</p>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message <span class="form-label-note">(Optional)</span></label>
+            <textarea class="form-input form-textarea" id="message" rows="3" placeholder="I'm donating in honor 
+of..."></textarea>
+          </div>
+          <label class="anon-label">
+            <input type="checkbox" id="anonymous" />
+            <div>
+              <div class="anon-label-title">Donate Anonymously</div>
+              <div class="anon-label-sub">Your name will not appear on the public donor wall.</div>
+            </div>
+          </label>
+          <button class="btn-full" onclick="goToTx()">Continue to Payment</button>
+        </div>
+        <!-- STEP 2 -->
+        <div id="step-tx" class="hidden">
+          <h3 class="tx-title">Send Your Donation</h3>
+          <p class="tx-sub">Send <strong id="tx-amount-display">$100</strong> in crypto to the address below.</p>
+          <div class="chain-toggle">
+            <button class="chain-btn active" id="btn-sol" onclick="setChain('SOL')">Solana (SOL)</button>
+            <button class="chain-btn" id="btn-btc" onclick="setChain('BTC')">Bitcoin (BTC)</button>
+          </div>
+          <div class="address-box">
+            <p class="address-eyebrow" id="address-label">Solana Address</p>
+            <div class="address-text" id="address-text">AZDvmEUwXy5yQVpTUxbArbM4GFVdPGvHLwesTrPqk9Xo</div>
+            <button class="copy-btn" id="copy-btn" onclick="copyAddress()">Copy Address</button>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="txHash">Transaction Hash / ID</label>
+            <input class="form-input" id="txHash" type="text" placeholder="Paste your transaction hash here..." />
+            <p style="font-size:12px;color:var(--text-muted);margin-top:6px;">Paste the transaction ID after sending. This 
+confirms your donation.</p>
+          </div>
+          <div class="btn-row">
+            <button class="btn-back" onclick="goToForm()">Back</button>
+            <button class="btn-full btn-confirm" id="confirm-btn" onclick="confirmDonation()">Confirm Donation</button>
+          </div>
+        </div>
+        <!-- STEP 3 -->
+        <div id="step-success" class="hidden">
+          <div class="success-wrap">
+            <div class="success-icon"><div class="success-dot"></div></div>
+            <h3>Thank you.</h3>
+            <p>Your generosity brings us one step closer to a world without ALS. Your donation has been recorded and will 
+appear on the donor wall shortly.</p>
+            <button class="btn-outline" onclick="resetForm()">Make Another Donation</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">ALS <em>Hope Fund</em></div>
+        <p class="footer-desc">A movement to end Amyotrophic Lateral Sclerosis. Every donation goes directly to research 
+and patient support.</p>
+      </div>
+      <div class="footer-right">
+        <p>SOL: AZDvmEUwXy5yQVpTUxbArbM4GFVdPGvHLwesTrPqk9Xo</p>
+        <p>BTC: bc1q03ztuxcley9uy6xuxe0gkg6h00cuel5p3e8hq8</p>
+        <p class="footer-copy">&copy; <span id="year"></span> ALS Hope Fund. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
